@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <!-- parallex scrolling -->
+		<script src="./scripts/parallax.js"></script>
+
+        <!-- slideshow -->
+		<script src="./scripts/slideshow.js"></script>
+
+		<title>Garden Sensor | Project A</title>
+	</head>
+
+	<body>
+		<!-- header -->
+		<div id="top">
+			<div class="container">
+				<div class="logo">
+					<!--<img src="./images/logo.gif" alt="logo" width="100" height="auto">-->
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+		<div id="bottom"></div>
+		<div id="left"></div>
+		<div id="right"></div>
+
+		<div class="imageslider">							
+			<p id="gardenProject" class="about">PROJECT A</p>
+			<img src="./gardenImages/img1.jpg" id="img"/>
+			
+			<div id="leftHolder"><img onClick="slideshow(-1)" class="left" src="./gardenImages/leftArrow.png"/></div>
+
+			<div id="rightHolder"><img onClick="slideshow(1)" class="right" src="./gardenImages/rightArrow.png"/></div>
+		</div>	
+	</body>	
+</html>

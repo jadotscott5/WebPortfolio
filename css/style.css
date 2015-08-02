@@ -1,0 +1,592 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width:  100%;	
+}
+
+.parallax-window {
+	min-height: 610px;
+    background: transparent;
+    z-index: 1;
+}
+
+
+/*************************************************************
+NAVIGATION BAR SECTION
+*************************************************************/
+.navbar {
+	background-color: black;
+	text-align: center;
+	border: 0;
+	margin-right: 20px;
+}
+
+.navbar .nav {
+	float: none;
+}
+
+.nav li {
+	display: inline-block;
+	font-size: 1.4em;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;	
+	text-decoration: none;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.nav a {
+	color: #04B45F;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: white;
+}
+
+
+/*************************************************************
+SECTION FOR THE EDGE BORDERS
+*************************************************************/
+#top, #bottom, #left, #right {
+	background: #000000;
+	position: fixed;
+	z-index: 3;
+}
+
+#left, #right {
+	top: 0; bottom: 0;
+	width: 30px;
+}
+
+#left { 
+	left: 0; 
+}
+
+#right { 
+	right: 0; 
+}
+
+#top, #bottom {
+	left: 0; right: 0;
+	height: 45px;
+}
+
+#top { 
+	top: 0; 
+}
+
+#bottom { 
+	bottom: 0; 
+}
+
+#copyright{
+	padding-top: 13px;
+}
+
+
+/*************************************************************
+MAIN PAGE SECTION
+*************************************************************/
+.mainpage {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;	
+	text-align: center;  /*puts the mainList in center of page*/
+}
+
+.nameHeading {
+	position: relative;
+	top: 50px;
+}
+
+.mainpage .myname {
+	display: block;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 4em;
+}
+
+#first {
+	color: #FFFFFF;
+}
+
+#middle {
+	color: #FFFFFF;
+}
+
+#last {
+	color: #FFFFFF;
+}
+
+.mainList {
+	color: #FFFFFF;
+	display: inline-block;  /*put the list in an inline block*/
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;	
+	margin-top: 150px;
+	z-index: 2;
+	font-size: 1.4em;
+}
+
+.mainList .horizontal {
+	display: inline;
+	text-align: left;
+	border-left: 2px solid;
+	padding-left: 0.3em;
+	z-index: 2;
+}
+
+.mainList .first {
+	border-left: none;
+}
+
+/* main page media */
+@media(min-width: 768px) {
+	.mainpage {
+		height: 100%;
+		padding: 0;
+	}	
+
+	.mainpage .nameHeading {
+		top:200px;
+	}
+	.mainpage .nameHeading .myname {
+		display: inline;
+		font-size: 6em;
+	}
+
+	.mainpage .mainList {
+		margin-top: 350px;
+		font-size: 2em;
+	}
+}
+
+
+/*************************************************************
+SEPERATE HTML FILE FOR PROJECTS SECTION
+*************************************************************/
+#projects .imageslider {
+	height: 450px;
+	width: 750px;
+	position: relative;
+	padding-top: 20px;
+	margin: auto;
+}
+
+#gardenProject {
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding-top: 30px;
+	color: black;
+	font-weight: 900;
+	font-size: 3em;
+	text-align: center;
+}
+
+#img {
+	height: 450px;
+	width: 750px;
+	position: absolute;
+	margin: auto;
+	left: 10%;
+}
+
+#leftHolder {
+	height: 450px;
+	width: 50px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#rightHolder {
+	height: 450px;
+	width: 50px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}	
+
+.left {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+}
+
+.right {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 60%;
+	right: 50%;
+}
+/* end of the projectA sheet*/
+
+/*************************************************************
+MY PROJECTS SECTION
+*************************************************************/
+#myProjects {
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #000000;
+	font-weight: 900;
+	font-size: 4em;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.parallax-window #projects {
+	min-height: 610px;
+	background-color: #E6E6E6;
+}
+
+.projectList {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	float: left;
+}
+
+.projectList li {
+	margin: 0 0 20px 0;
+	padding: 0 20px;
+	width: 33.3%;
+	float: left;
+	list-style: none;
+}
+
+.projectList li .portion {
+	width: 100%;
+	height: 200px;
+	margin-left: 12%;
+	float: left;
+	list-style: none;
+}
+
+/* project table media query */
+@media only screen and (min-width: 1024px) and (max-width: 1159px) {
+	.projectList li {
+		width: 33%;
+	}
+	.projectList li .portion {
+		margin-left: 3%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.projectList li {
+		width: 50%;
+	}
+	.projectList li .portion {
+		margin-left: 5%;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+	.projectList li {
+		width: 100%;
+	}
+	.projectList li .portion {
+		margin-left: 24%;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+	.projectList li {
+		width: 100%;
+	}
+	.projectList li .portion {
+		margin-left: 14%;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.projectList li {
+		width: 100%;
+	}
+	.projectList li .portion {
+		margin-left: 9%;
+	}
+}
+
+#imgCell {
+	border-radius: 10%;
+	-webit-border-radius: 10%;
+	-moz-border-radius: 10%;
+	border: 4px solid #B5B591;
+
+	/*use if no sliding caption*/
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+}
+
+/* grayscaling is for turning black and white*/
+#imgCell:hover {
+	filter: none;
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+}
+
+figure {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+figure figcaption {
+	position: absolute;
+	width: 280px; 
+	height: 50%;
+	background: rgba(0,0,0,0.75);
+	color: white;
+	padding: 10px 10px;
+	opacity: 0;	
+	font-family: sans-serif;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+}
+
+figure:hover figcaption {
+	opacity: 1;
+	bottom: 0;	
+}
+
+figure:before {
+	content: "?";
+	position: absolute;
+	background: rgba(255,255,255,0.75);
+	color: black;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 24px;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	opacity: 0.75;	
+	z-index: 2;
+}
+
+figure:hover:before {
+	opacity: 0;
+}
+
+.caption-bottom:before {
+	bottom: 10px;
+	left: 10px;
+}
+
+.caption-bottom figcaption {
+	left: 0;
+	bottom: -30%;
+}
+
+.caption-bottom:hover figcaption {
+	bottom: 0;	
+}
+
+td {
+	text-align: center;
+	padding: 20px;
+}
+
+
+/*************************************************************
+ABOUT ME SECTION
+*************************************************************/
+.parallax-window #aboutpage .aboutleft {
+	float: left;
+	width: 50%;
+	height: 610px;
+	background: url(../images/aboutme.png) no-repeat center left;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.parallax-window #aboutpage .aboutleft .about{
+	margin-top: 250px;
+}
+
+.parallax-window #aboutpage .aboutright {
+	width: 50%;
+	float: right;
+	overflow: hidden;
+	height: 610px;
+	background-color: #000000;
+	opacity: 0.9;
+}
+
+.parallax-window #aboutpage .aboutright .abouttext {
+	margin: auto;
+	padding-top: 120px;
+	width: 50%;
+	color: white;
+	font-family: sans-serif;
+	font-size: 1.3em;
+	overflow: hidden;
+}
+
+#bigAbout {
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: white;
+	font-weight: 900;
+	font-size: 4em;
+	text-align: center;
+}
+
+/* about media query */
+@media only screen and (max-width: 768px) {
+	.parallax-window #aboutpage .aboutleft {
+		float: none;
+		margin-right: 0;
+		width: auto;
+	}
+	.parallax-window #aboutpage .aboutright {
+		float: none;
+		width: auto;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.parallax-window #aboutpage .aboutright .abouttext {
+		padding-top: 80px;
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+	.parallax-window #aboutpage .aboutright .abouttext {
+		padding-top: 80px;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+	.parallax-window #aboutpage .aboutright .abouttext {
+		padding-top: 100px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.parallax-window #aboutpage .aboutright .abouttext {
+		padding-top: 100px;
+		width: 60%;
+	}
+}
+
+
+/*************************************************************
+CONTACT SECTION
+*************************************************************/
+.parallax-window #contact {
+	min-height: 610px;
+	background-color: #E6E6E6;
+}
+
+h2.bigContact {
+	padding-top: 100px;
+	font-size: 4em;	
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+p.contactMe {
+	font-family: sans-serif;
+	font-size: 1.3em;
+}
+
+.fa-envelope-o {
+	color: #04B45F;
+}
+
+span.emailText {
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+	font-size: 1.4em;
+	color: #04B45F;
+}
+
+.btn-cust:hover,
+.btn-cust:focus {
+  	-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+  	transform: scale(1.1);    
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+    p.contactMe {
+    	margin-right: 20px;
+    	margin-left: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 100px;
+    }
+    p.contactMe {
+    	margin-right: 20px;
+    	margin-left: 20px;
+    }
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #04B45F;
+    color: #04B45F;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #04B45F;
+    outline: 0;
+    color: #000;
+    background-color: #04B45F;
+  	-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+  	transform: scale(1.1);    
+}
